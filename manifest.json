@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Audio Tab Detector",
+    "version": "1.0",
+    "description": "Detects which browser tabs are playing audio",
+    "permissions": [
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "icon.png"
+    },
+    "icons": {
+        "128": "icon.png"
+    },
+    "web_accessible_resources": [{
+        "resources": ["icon.png"],
+        "matches": ["<all_urls>"]
+    }]
+} 
